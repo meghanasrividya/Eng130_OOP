@@ -53,3 +53,22 @@
 - Another good real time example of polymorphism is water. Water is a liquid at normal temperature, but it can be changed to solid when it frozen, or same water changes to a gas when it is heated at its boiling point.Thus, same water exhibiting different roles is polymorphism.
 - Another excellent real time example of polymorphism is your smartphone.The smartphone can act as phone, camera, music player and what not, taking different forms and hence polymorphism
 ![img_4.png](img_4.png)
+
+- Refactored program of fizzbuzz
+```python
+def fizzbuzz(ran) :
+    for i in range (1,ran) : print ("Fizz"*(i%3==0)+"Buzz"*(i%5==0) or str(i))
+
+ran = int(input("Please enter the range :"))
+
+fizzbuzz(ran)
+```
+- Output of the program 
+
+![img_5.png](img_5.png)
+
+- Refactored program of calculating age:
+![img_6.png](img_6.png)
+-  Output of the program 
+
+![img_7.png](img_7.png)
