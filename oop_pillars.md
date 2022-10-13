@@ -72,3 +72,45 @@ fizzbuzz(ran)
 -  Output of the program 
 
 ![img_7.png](img_7.png)
+
+- Refactored program of restaurant helper:
+```python
+# AS a User I want to be able to see the menu in a formated way, so that I can order my meal.
+def restaurant_helper():
+ menu_list=["Burger","Fries","Wrap","noodles","chickenwings","friedrice"]
+ print(menu_list)
+#AS a User I want to be able to order 3 times, and have my responses added to a list so they aren't forgotten
+
+ customer_selected_items=input("Select the items from the menu: ").split()
+ return customer_selected_items
+ # As a user, I want to have my order read back to me in formated way so I know what I ordered.
+
+print("order :" ,restaurant_helper())
+```
+-  Output of the program 
+![img_9.png](img_9.png)
+
+- Refactored program of movie rating:
+```python
+def movierating(age):
+
+
+ if age >= 18 and age <= 117:
+    print("You are allowed to watch all the movies")
+ elif age >= 16 and age <18:
+    print("These movies are only for 16 years and above ")
+ elif age >= 15 and age <16:
+    print("These movies are only for 15 years and above")
+ elif age >= 12 and age <15:
+    print("These movies are only for 12 and above")
+ elif age > 117:
+    print("Please enter the correct age")
+ else:
+    print("please enter only digits")
+
+age=int(input("Please , enter your age:"))
+movierating(age)
+```
+- Output of the program 
+
+![img_10.png](img_10.png)
