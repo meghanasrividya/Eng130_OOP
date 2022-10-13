@@ -88,6 +88,7 @@ def restaurant_helper():
 print("order :" ,restaurant_helper())
 ```
 -  Output of the program 
+
 ![img_9.png](img_9.png)
 
 - Refactored program of movie rating:
