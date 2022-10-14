@@ -138,7 +138,7 @@ student_data()
 - Output of the program
 
  ![img_12.png](img_12.png)
- 
+ ![img_13.png](img_13.png)
 - step 1: create animal.py as parent
 ```python
 # create a class called Animal - file name starts with a- class name starts with A
