@@ -138,3 +138,87 @@ student_data()
 - Output of the program
 
  ![img_12.png](img_12.png)
+ 
+- step 1: create animal.py as parent
+```python
+# create a class called Animal - file name starts with a- class name starts with A
+# add the comon attibutes/var behaviour/functions
+# syntax class name: class Animal:
+
+class Animal: #follow the correct naming convention & best practises
+    # we need to initialise with builtin method called __init__(self)
+    # self refers to current class
+    def __int__(self):# any attributes attached to the class should be part of __init__method
+        # self.var = True
+        self.alive = True
+        self.spine = True
+        self.eyes = True
+# Let's create some methods to add common behaviours
+    def breathe(self):
+        return" keep breathing to stay alive "
+# Let's add one more behaviour
+    def eat(self):
+        return "time to eat ....!"
+
+# create an object of this class
+
+cat = Animal()# creating an object of animal class
+
+# print(cat.breathe())# calling the method using object of the Animal class
+# print(cat.eat())
+```
+  
+- step 2: create reptile.py as a child to inherit-abstract etc
+```python
+from animal import Animal # importing everything from Animal class
+class Reptile(Animal): # Inherit from Animal class
+    def __init__(self):
+
+        self.cold_blooded=True
+        self.tetrapods=None
+        self.heart_chambers =[3,4]
+
+    def hunt(self):
+        return "keep working hard to find food !"
+    def use_venom(self):
+        return "If I have it I will use it"
+smart_reptile = Reptile()
+print(smart_reptile.breathe())
+print(smart_reptile.hunt())
+```
+- step 3: snake.py & inherit from reptile
+```python
+from reptile import Reptile
+
+class Sk(Reptile):
+
+    def __init__(self):
+        super().__init__()
+
+    def use_tongue_to_smell(self):
+        return " if I can touch itI can smell it as well "
+
+smart_sk = Sk()
+print(smart_sk.hunt())
+print(smart_sk.use_tongue_to_smell())
+print(smart_sk.breathe())
+```
+- step 4: python_oop.py 
+```python
+from snake import Sk
+class Python_oop(Sk):
+    def __init__(self):
+        super().__init__()
+        self.large=True
+
+    def swallow(self):
+        return "Python can swallow"
+
+py = Python_oop()
+
+print(py.swallow())# printing same class method
+print(py.breathe())# printing greatgrand parent method
+print(py.hunt())# printing grand parent method
+print(py.use_tongue_to_smell())# using parent class method
+
+```
