@@ -136,4 +136,5 @@ def student_data():
 student_data()
 ```
 - Output of the program
+
  ![img_12.png](img_12.png)
