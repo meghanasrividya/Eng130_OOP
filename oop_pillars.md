@@ -142,7 +142,7 @@ student_data()
 - step 1: create animal.py as parent
 ```python
 # create a class called Animal - file name starts with a- class name starts with A
-# add the comon attibutes/var behaviour/functions
+# add the common attibutes/var behaviour/functions
 # syntax class name: class Animal:
 
 class Animal: #follow the correct naming convention & best practises
