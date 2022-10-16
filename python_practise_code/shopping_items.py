@@ -4,5 +4,7 @@ def food_bill():
     print(shoppin_items.values())
 
     print("The total bill is :"+str(sum(shoppin_items.values())))
+    for item in shoppin_items:
+        print(item)
 
 food_bill()
